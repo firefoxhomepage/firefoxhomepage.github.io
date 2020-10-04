@@ -29,7 +29,7 @@ const bookmarks = [
     links: [
       { name: "/r/pcmasterrace", url: "https://www.reddit.com/r/pcmasterrace" },
       { name: "/r/unixporn", url: "https://reddit.com/r/unixporn" },
-      { name: "/r/piracy", url: "https://www.reddit.com/r/piracy" },
+      { name: "/r/news", url: "https://www.reddit.com/r/news" },
     ],
   },
 ];
