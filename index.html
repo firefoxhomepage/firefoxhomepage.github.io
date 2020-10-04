@@ -20,9 +20,9 @@
     </div>
     <div class="container">
       <div id="clock"></div>
-      <form method="GET" action="https://www.google.com/search">
-        <input name="as_q" class="search-field" autofocus>
-        <button type="submit" class="search-submit" value="" style="fill: white"></button>
+      <form onSubmit="return false;">
+        <input name="as_q" id="search-field2" class="search-field" autofocus onkeypress="javascript:search(event)">
+        <button class="search-submit" value="" style="fill: white"></button>
       </form>
 
       <div class="weather-container">
@@ -40,14 +40,17 @@
       const searchUrl = "https://google.com/search?q=";
       // Search on enter key event
       function search(e) {
+        var val = document.getElementById("search-field2").value;
         if (e.keyCode == 13) {
-          var val = document.getElementById("search-field").value;
+          var url = '';
           if (/\.(com|org|net|int|edu|gov)/.test(val)) {
-          window.open(val);
+            url = /^http/.test(val)?val:'https://'+val;
           } else {
-            window.open(searchUrl + val);
+            url = searchUrl + val;
           }
+          window.open(url);
         }
+        return false;
       }
       // Get current time and format
       function getTime() {
