@@ -41,11 +41,12 @@
       // Search on enter key event
       function search(e) {
         if (e.keyCode == 13) {
-                var val = document.getElementById("search-field").value;
-          if (/\.(com|org|net|int|edu|gov)/.test(val))
+          var val = document.getElementById("search-field").value;
+          if (/\.(com|org|net|int|edu|gov)/.test(val)) {
           window.open(val);
-          else {
+          } else {
             window.open(searchUrl + val);
+          }
         }
       }
       // Get current time and format
