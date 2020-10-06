@@ -43,7 +43,7 @@
         var val = document.getElementById("search-field2").value;
         if (e.keyCode == 13) {
           var url = '';
-          if (/\.(com|org|net|int|edu|gov)/.test(val)) {
+          if (/\.(com|org|net|int|edu|gov|tv)/.test(val)) {
             url = /^http/.test(val)?val:'https://'+val;
           } else {
             url = searchUrl + val;
