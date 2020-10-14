@@ -13,7 +13,7 @@ const bookmarks = [
     links: [
       { name: "Youtube", url: "https://youtube.com" },
       { name: "Twitch", url: "https://www.twitch.tv" },
-      { name: "Lookmovie", url: "https://lookmovie.ag" },
+      { name: "Vimeo", url: "https://vimeo.com" },
     ],
   },
   {
