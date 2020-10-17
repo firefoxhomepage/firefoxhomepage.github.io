@@ -22,7 +22,7 @@
       <div id="clock"></div>
       <form onSubmit="return false;">
         <input name="as_q" id="search-field2" class="search-field" autofocus onkeypress="javascript:search(event)">
-        <button class="search-submit" value="" style="fill: white"></button>
+        <button class="search-submit" value="" style="fill: white" onclick="(function onSearchClick(){search({keyCode:13});})()"></button>
       </form>
 
       <div class="weather-container">
